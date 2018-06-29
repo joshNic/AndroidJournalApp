@@ -1,0 +1,2 @@
+# AndroidJournalApp
+Android Simple Journal
