@@ -41,15 +41,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public long insertEntry(String entry) {
+    public long insertEntry(String entryTitle, String entryBody ) {
         // get writable database as we want to write data
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
         // `id` and `timestamp` will be inserted automatically.
         // no need to add them
-        values.put(Entry.COLUMN_ENTRY_TITLE, entry);
-        values.put(Entry.COLUMN_ENTRY_BODY, entry);
+        values.put(Entry.COLUMN_ENTRY_TITLE, entryTitle);
+        values.put(Entry.COLUMN_ENTRY_BODY, entryBody);
 
         // insert row
         long id = db.insert(Entry.TABLE_NAME, null, values);
