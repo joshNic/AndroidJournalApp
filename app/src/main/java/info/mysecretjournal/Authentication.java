@@ -100,7 +100,7 @@ public class Authentication extends AppCompatActivity implements
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
-            Toast.makeText(this, "Unable to connect please make sure you have a stable internet connection", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Unable to connect please make sure you have a google account on the device and a stable internet connection", Toast.LENGTH_LONG).show();
             updateUI(null);
         }
     }
