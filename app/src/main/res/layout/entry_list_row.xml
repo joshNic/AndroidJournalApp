@@ -29,7 +29,7 @@
         android:layout_alignTop="@+id/entryImageView"
         android:layout_marginStart="70dp"
         android:layout_marginLeft="70dp"
-        android:text="TextView"
+
         android:textColor="@color/entry_list_text"
         android:textSize="@dimen/entry_list_text" />
 
@@ -41,7 +41,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/entryTitle"
         android:layout_marginTop="37dp"
-        android:text="TextView"
+
         android:textColor="@color/timestamp"
         android:textSize="@dimen/timestamp" />
 

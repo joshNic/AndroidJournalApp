@@ -4,6 +4,8 @@
     <string name="activity_title_home">Journal</string>
     <string name="msg_no_entries">No entries found!</string>
     <string name="lbl_new_entry_title">New Entry</string>
+    <string name="lbl_title">Entry Title</string>
+    <string name="lbl_body">Entry Body</string>
     <string name="lbl_edit_entry_title">Edit Entry</string>
     <string name="hint_enter_entry">Enter your entry!</string>
     <string name="hint_enter_entry_title">Enter your entry title!</string>

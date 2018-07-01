@@ -1,5 +1,6 @@
 package info.mysecretjournal;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.DialogInterface;
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 recyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, final int position) {
+                getItems(position);
             }
 
             @Override
@@ -83,6 +85,22 @@ public class MainActivity extends AppCompatActivity {
                 showActionsDialog(position);
             }
         }));
+
+    }
+
+    public void getItems(int position){
+        Entry entry = entriesList.get(position);
+        final String title = entry.getEntryTitle().toString();
+        final String body = entry.getEntryBody().toString();
+        final String time = entry.getTimestamp().toString();
+
+        Intent intent = new Intent(this, EntryDetails.class);
+        intent.putExtra("title", title);
+        intent.putExtra("body", body);
+        intent.putExtra("time",time);
+        this.startActivity(intent);
+
+
     }
 
     /**

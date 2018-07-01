@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:showIn="@layout/details_activity">
+
+    <TextView
+        android:id="@+id/entryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="8sp"
+        android:layout_marginTop="60dp"
+        android:text="@string/lbl_title"
+        android:textColor="@color/entry_title"
+        android:textSize="@dimen/lbl_new_entry_title"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/entryBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/lbl_title"
+        android:textColor="@color/entry_list_text"
+        android:textSize="@dimen/lbl_new_entry_title"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/lbl_title"
+        android:textColor="@color/msg_no_entries"
+        android:textSize="@dimen/lbl_new_entry_title"
+        android:textStyle="normal" />
+
+</LinearLayout>

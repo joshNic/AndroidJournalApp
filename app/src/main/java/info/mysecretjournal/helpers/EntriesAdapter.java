@@ -61,7 +61,7 @@ public class EntriesAdapter extends RecyclerView.Adapter<EntriesAdapter.MyViewHo
 
         final String entryTitle = entry.getEntryTitle().toString();
         final String entryBody = entry.getEntryBody().toString();
-        
+
     }
 
     @Override
