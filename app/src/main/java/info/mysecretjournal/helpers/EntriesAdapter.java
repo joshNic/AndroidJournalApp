@@ -53,10 +53,15 @@ public class EntriesAdapter extends RecyclerView.Adapter<EntriesAdapter.MyViewHo
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Entry entry = entriesList.get(position);
 
+        // Displaying entry title
         holder.entryTitle.setText(entry.getEntryTitle());
 
         // Formatting and displaying timestamp
         holder.timestamp.setText(formatDate(entry.getTimestamp()));
+
+        final String entryTitle = entry.getEntryTitle().toString();
+        final String entryBody = entry.getEntryBody().toString();
+        
     }
 
     @Override
